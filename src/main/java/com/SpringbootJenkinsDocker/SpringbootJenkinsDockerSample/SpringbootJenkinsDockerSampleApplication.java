@@ -14,6 +14,11 @@ public class SpringbootJenkinsDockerSampleApplication {
 	public String getMessage() {
 		return "Hello Avinash Welcome";
 	}
+
+	@GetMapping("/get")
+	public String getMessageMegha() {
+		return "Hello Megha Welcome";
+	}
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootJenkinsDockerSampleApplication.class, args);
